@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.bumptech.glide.Glide
 import com.company.sample.databinding.ActivityMainBinding
 import com.company.sample.remote.RetrofitBuilder
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -53,7 +55,6 @@ class MainActivity : AppCompatActivity() {
             }
 
             fun getImageURL(imageURL: String) {
-
                 Glide.with(applicationContext)
                     .load(imageURL)
                     .into(binding.ivProfile)
