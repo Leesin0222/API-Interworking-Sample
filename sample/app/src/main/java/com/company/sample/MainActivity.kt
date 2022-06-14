@@ -1,15 +1,12 @@
 package com.company.sample
 
-import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.bumptech.glide.Glide
 import com.company.sample.databinding.ActivityMainBinding
 import com.company.sample.remote.RetrofitBuilder
-import com.company.sample.remote.api.GithubApi
 import com.company.sample.remote.response.UserInfoResponse
 import retrofit2.Call
 import retrofit2.Callback
