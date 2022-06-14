@@ -8,14 +8,12 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/iv_profile"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:layout_marginTop="72dp"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="64dp"
         app:civ_border_width="1dp"
         app:civ_border_color="#A3A3A3"
-        android:src="@drawable/ic_launcher_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,7 +22,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:text="이름"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:textSize="30sp"
@@ -67,7 +64,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
-        android:text="20"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:textSize="15sp"
@@ -80,7 +76,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
-        android:text="32"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:textSize="15sp"
@@ -96,10 +91,19 @@
         android:layout_marginEnd="40dp"
         android:textColor="@color/white"
         android:gravity="center"
-        android:text="설명입니다 나는 정승훈이고 화성에서 왔습니다.나는 안드를 좋아하며 치킨은 맛이 있습니다.설명입니다 나는 정승훈이고 화성에서 왔습니다.나는 안드를 좋아하며 치킨은 맛이 있습니다설명입니다 나는 정승훈이고 화성에서 왔습니다.나는 안드를 좋아하며 치킨은 맛이 있습니다설명입니다 나는 정승훈이고 화성에서 왔습니다.나는 안드를 좋아하며 치킨은 맛이 있습니다"
+        android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_following" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/semicolon"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
