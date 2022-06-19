@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         RetrofitBuilder.githubApi.getGithubInfo().enqueue(object : Callback<UserInfoResponse> {
             override fun onResponse(
                 call: Call<UserInfoResponse>,
-                response: Response<UserInfoResponse>,
+                response: Response<UserInfoResponse>
             ) {
                 val userInfo = response.body()
 
